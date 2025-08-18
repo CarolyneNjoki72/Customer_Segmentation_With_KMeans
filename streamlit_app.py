@@ -45,8 +45,8 @@ if uploaded_file:
     if len(features) == 2:
         plt.figure(figsize=(6,4))
         sns.scatterplot(x=features[0], y=features[1], hue="Cluster", data=df, palette="tab10")
-        plt.scatter(model.cluster_centers_[:,0], model.cluster_centers_[:,1], 
-                    s=200, c="black", marker="X", label="Centers")
+     #  plt.scatter(model.cluster_centers_[:,0], model.cluster_centers_[:,1], 
+                    # s=200, c="black", marker="X", label="Centers")
         plt.legend()
         st.pyplot(plt)
 
