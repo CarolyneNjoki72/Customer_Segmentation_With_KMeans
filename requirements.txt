@@ -1,5 +1,4 @@
 streamlit
-pandas==2.2.0
-numpy>=1.25.0
-matplotlib
+numpy
+pandas
 scikit-learn
