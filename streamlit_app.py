@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from sklearn.cluster import KMeans 
+#from sklearn.cluster import KMeans 
 import matplotlib.pyplot as plt
 import seaborn as sns
 
