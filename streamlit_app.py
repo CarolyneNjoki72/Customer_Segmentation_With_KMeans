@@ -21,5 +21,14 @@ if mode == "Dark":
     )
 
 st.title("Customer Segmentation Dashboard")
+# File upload
+uploaded_file = st.file_uploader("Upload your dataset", type=["csv"])
 
+if uploaded_file:
+    df = pd.read_csv(uploaded_file)
+    st.write("Data Preview:", df.head())
+
+    # Feature selection
+    features = st.multiselect("Select features for clustering", df.columns, 
+                              default=["Income to Price Ratio", "Spending Score"])
 
