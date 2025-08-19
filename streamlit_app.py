@@ -50,7 +50,7 @@ if uploaded_file:
         plt.legend()
         st.pyplot(plt)
 
-    # --- Marketing Campaign Suggestions ---
+    # Marketing Campaign Suggestions 
     st.subheader("Suggested Marketing Campaigns")
 
     for cluster_id, row in summary.iterrows():
