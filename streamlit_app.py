@@ -29,8 +29,8 @@ if uploaded_file:
     st.write("Data Preview:", df.head())
 
     # Feature selection
-    features = st.multiselect("Select features for clustering", df.columns, 
-                              default=["Income to Price Ratio", "Spending Score"])
+    features = st.multiselect("Select features for clustering", df.columns)
+                              #default=["Income to Price Ratio", "Spending Score"])
     k = st.slider("Select number of clusters (k)", 2, 10, 3)
     # Run clustering
     X = df[features]
