@@ -1,25 +1,43 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# Customer Segmentation with K-Means
 
-Description of the app ...
+This project demonstrates how businesses can use K-Means Clustering to segment customers based on their income-to-price ratio and spending score. By identifying distinct groups of customers, businesses can design targeted marketing campaigns to improve engagement and retention.
 
-## Demo App
+The project is built with Streamlit to provide an interactive interface for exploring clusters and suggested marketing campaigns.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+## Features
 
-## GitHub Codespaces
+* Perform K-Means clustering on customer data.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+* Visualize clusters using scatter plots.
 
-## Section Heading
+* Automatically generate marketing campaign suggestions for each cluster.
 
-This is filler text, please replace this with text for this section.
+* Interactive Streamlit dashboard (supports dark mode).
 
-## Further Reading
+* Evaluate clustering quality using Silhouette Score.
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+
+## Output
+
+Clusters generated from the dataset:
+
+* Cluster 0: VIP customers – high ratio & high spending → exclusive offers, early access program
+  
+* Cluster 1: Budget-conscious but loyal → discounts, referral bonuses
+
+* Cluster 2: High potential but low engagement → awareness & personalized recommendations
+
+* Cluster 3: New/entry-level customers → broad promotions & bundles
+
+
+## Tech Stack
+
+* Python 3.9+
+
+* scikit-learn (KMeans, silhouette score)
+
+* Pandas & NumPy (data processing)
+
+* Matplotlib & Seaborn (visualizations)
+
+* Streamlit (interactive dashboard)
